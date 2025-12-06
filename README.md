@@ -28,35 +28,35 @@ The Position Management System is a full-stack decentralized application (dApp) 
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                        User Interface (UI)                       │
-│                    Streamlit Dashboard (Python)                  │
-│  ┌──────────────┬──────────────┬──────────────┬──────────────┐ │
-│  │ Open Position│Active Positions│Risk Monitor │  PnL History │ │
-│  └──────────────┴──────────────┴──────────────┴──────────────┘ │
+│                        User Interface (UI)                      │
+│                    Streamlit Dashboard (Python)                 │
+│  ┌──────────────┬──────────────┬──────────────┬──────────────┐  │
+│  │ Open Position│Active Positions│Risk Monitor │  PnL History│  │
+│  └──────────────┴──────────────┴──────────────┴──────────────┘  │
 └────────────────────────┬────────────────────────────────────────┘
                          │ HTTP/REST + WebSocket
                          ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                    Backend API Server (Rust)                     │
-│                         Axum Framework                           │
-│  ┌──────────────────────────────────────────────────────────┐  │
-│  │  Routes  │  Position Monitor  │  Margin Calculator       │  │
-│  │  PnL Tracker  │  WebSocket Handler  │  Position Manager │  │
-│  └──────────────────────────────────────────────────────────┘  │
+│                    Backend API Server (Rust)                    │
+│                         Axum Framework                          │
+│  ┌──────────────────────────────────────────────────────────┐   │
+│  │  Routes  │  Position Monitor  │  Margin Calculator       │   │
+│  │  PnL Tracker  │  WebSocket Handler  │  Position Manager  │   │
+│  └──────────────────────────────────────────────────────────┘   │
 └───────┬────────────────────────────┬────────────────────────────┘
         │                            │
         ▼                            ▼
 ┌──────────────────┐      ┌──────────────────────────────────────┐
 │   PostgreSQL     │      │      Solana Blockchain               │
 │    Database      │      │                                      │
-│                  │      │  ┌────────────────────────────────┐ │
-│ • Positions      │      │  │   Position Management Program  │ │
-│ • Users          │      │  │      (Anchor Framework)        │ │
-│ • PnL History    │      │  │                                │ │
-│ • Liquidations   │      │  │  • Open Position              │ │
-│ • Funding Rates  │      │  │  • Modify Position            │ │
-└──────────────────┘      │  │  • Close Position             │ │
-                          │  └────────────────────────────────┘ │
+│                  │      │  ┌────────────────────────────────┐  │
+│ • Positions      │      │  │   Position Management Program  │  │
+│ • Users          │      │  │      (Anchor Framework)        │  │
+│ • PnL History    │      │  │                                │  │
+│ • Liquidations   │      │  │  • Open Position               │  │
+│ • Funding Rates  │      │  │  • Modify Position             │  │
+└──────────────────┘      │  │  • Close Position              │  │
+                          │  └────────────────────────────────┘  │
                           │                                      │
                           │  Program ID: 3BpQ5UZ...yraf          │
                           └──────────────────────────────────────┘
