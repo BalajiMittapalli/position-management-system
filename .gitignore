@@ -1,0 +1,53 @@
+# Anchor
+.anchor
+target/
+**/*.rs.bk
+
+# Node
+node_modules/
+.yarn/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Environment variables
+.env
+*.env
+!.env.example
+
+# Solana
+test-ledger/
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build artifacts
+*.log
+dist/
+build/
+*.wasm
+
+# Rust
+Cargo.lock
+debug/
+release/
+
+# OS
+.DS_Store
+Thumbs.db
