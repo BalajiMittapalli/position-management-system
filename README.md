@@ -13,6 +13,7 @@ A comprehensive decentralized perpetual trading platform built on Solana blockch
 - [Usage](#usage)
 - [API Documentation](#api-documentation)
 
+<a name="overview"></a>
 ## 🎯 Overview
 
 The Position Management System is a full-stack decentralized application (dApp) that enables traders to manage leveraged positions on the Solana blockchain. The system provides:
@@ -22,6 +23,7 @@ The Position Management System is a full-stack decentralized application (dApp) 
 - **Professional Trading UI**: Streamlit-based dashboard with real-time updates via WebSocket
 - **Comprehensive Backend**: Rust-based API server with PostgreSQL for historical data and analytics
 
+<a name="system-architecture"></a>
 ## 🏗️ System Architecture
 
 ```
@@ -68,6 +70,7 @@ The Position Management System is a full-stack decentralized application (dApp) 
 4. **Real-time Updates** → WebSocket pushes updates to all connected clients
 5. **Historical Storage** → PostgreSQL stores all transactions for analytics
 
+<a name="components"></a>
 ## 🧩 Components
 
 ### 1. Solana Smart Contract (Anchor Program)
@@ -423,6 +426,7 @@ class WebSocketClient:
         # Clean connection close
 ```
 
+<a name="features"></a>
 ## ✨ Features
 
 ### Core Trading Features
@@ -477,6 +481,7 @@ class WebSocketClient:
    - Backup and recovery
    - Analytics-ready schema
 
+<a name="technology-stack"></a>
 ## 🛠️ Technology Stack
 
 ### Blockchain Layer
@@ -505,6 +510,7 @@ class WebSocketClient:
 - **Mocha**: Test runner
 - **Docker**: Containerization (optional)
 
+<a name="installation"></a>
 ## 📦 Installation
 
 ### Prerequisites
@@ -642,6 +648,7 @@ streamlit run app.py
 
 The UI will open automatically at `http://localhost:8501`
 
+<a name="usage"></a>
 ## 🚀 Usage
 
 ### Opening a Position
@@ -679,6 +686,7 @@ The UI will open automatically at `http://localhost:8501`
 4. Review final PnL
 5. Complete transaction
 
+<a name="api-documentation"></a>
 ## 📚 API Documentation
 
 ### REST Endpoints
