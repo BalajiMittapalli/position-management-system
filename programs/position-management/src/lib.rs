@@ -14,6 +14,14 @@ use instructions::*;
 pub mod position_management {
     use super::*;
 
+    /// Initialize a user account
+    pub fn init_user(
+        ctx: Context<InitUser>,
+        initial_collateral: u64,
+    ) -> Result<()> {
+        instructions::init_user::handler(ctx, initial_collateral)
+    }
+
     /// Open a new leveraged position
     pub fn open_position(
         ctx: Context<OpenPosition>,
